@@ -1,0 +1,277 @@
+nav {
+  justify-content: right;
+  max-width: 100vw;
+
+  i {
+    color: $color-secondary;
+    font-size: 3em;
+    margin: 2rem;
+  }
+  a {
+    color: $color-secondary;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 2.75rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0.9rem;
+  }
+
+  .nav__desktop {
+    display: flex;
+    justify-items: right;
+    margin-right: 5vw;
+
+    a:hover {
+      text-shadow: -0.2rem 0.2rem #353e42;
+    }
+  }
+}
+.nav__mobile {
+  flex-direction: column;
+
+  &--visable {
+    display: flex;
+    justify-content: right;
+    margin-bottom: none;
+    margin-right: 30px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    max-width: 90vw;
+    margin-top: 4.2rem;
+    margin-bottom: 1.35rem;
+    margin-left: 5vw;
+    margin-right: 1.35rem;
+    vertical-align: Top;
+    flex-grow: 1;
+
+    span {
+      font-family: $font-display;
+      font-style: normal;
+      font-size: 3.75rem;
+      letter-spacing: 0.25rem;
+    }
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    max-width: 90vw;
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    margin-right: 0rem;
+    vertical-align: bottom;
+    flex-grow: 1;
+
+    span {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.125rem;
+      line-height: 3rem;
+      text-align: right;
+    }
+  }
+  &__p {
+    display: flex;
+    font-size: 0.625rem;
+    opacity: 70%;
+    margin-top: 1.25rem;
+    justify-content: center;
+  }
+  i {
+    display: flex;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+    justify-content: center;
+  }
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 20vh;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1.25rem;
+    padding: 2rem;
+  }
+}
+
+.button {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  text-align: center;
+  height: fit-content;
+  width: 40vw;
+  border: solid 0.1rem;
+  border-radius: 0.32rem;
+  margin-top: 2rem;
+  color: $color-secondary;
+  &--i {
+    border-color: #795f80;
+    background: #795f80;
+    width: 10vw;
+    margin: 0.25rem;
+    min-width: 100px;
+  }
+  &--ii {
+    width: 10vw;
+    margin: 0.25rem;
+    min-width: 100px;
+  }
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 20vh;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem;
+    padding: 2rem;
+    height: fit-content;
+    width: fit-content;
+  }
+}
+
+/* phone screen */
+@media only screen and (max-width: 768px) {
+  #projects {
+    height: fit-content;
+    max-width: 100vw;
+
+    .heading {
+      justify-content: center;
+      font-size: 2.5rem;
+      align-items: center;
+      text-align: center;
+      margin-top: 5vh;
+    }
+
+    .projectContainer {
+      &__project {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        height: fit-content;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        column-gap: 2rem;
+      }
+    }
+  }
+}
+
+/* desktop screen */
+@media only screen and (min-width: 768px) {
+  #projects {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+
+    .heading {
+      display: flex;
+      font-size: 2.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .projectContainer {
+      display: inline-grid;
+      grid-template-columns: 45vw 45vw;
+      column-gap: 5vw;
+      row-gap: 5vw;
+
+      &__project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0.25rem;
+  }
+}
+
+.page__icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+
+  &--mod {
+    color: $color-secondary;
+    display: flex;
+    margin: 1rem;
+    font-size: 3rem;
+  }
+}

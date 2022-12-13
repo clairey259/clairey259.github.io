@@ -1,0 +1,25 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Monofett&family=Monoton&family=Roboto&family=Space+Mono&display=swap");
+
+/* Variables */
+$font-body: "Space Mono", mono;
+$font-display: "Monofett", fantasy;
+$color-primary: #604567;
+$color-primary-dark: #503258b2;
+$color-secondary: #7cc7e4;
+$color-black: #2c073580;
+$color-white: #f9f6f0;
+
+/* Page Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-body;
+  color: $color-white;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
