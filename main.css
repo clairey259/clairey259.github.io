@@ -37,7 +37,6 @@ nav {
 
 .page__project {
   display: grid;
-  height: 100vh;
   width: 100vw;
 }
 
