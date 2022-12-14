@@ -20,7 +20,7 @@
             <a
               href="javascript:void(0);"
               class="page__icon"
-              onclick="myFunction()"
+              onclick="handleMenuAnimation()"
               ><i class="fa-solid fa-bars"></i> </a
           ></span>
           <div id="mobileLinks" class="nav__mobile--hidden">
@@ -64,19 +64,29 @@
           launching my career in Tech.
         </p>
         <div>
-          <a href="#" target="_blank" class="button">Download my resume</a>
+          <a
+            href="./Documents/resume_claireHuizenga.pdf"
+            target="_blank"
+            class="button"
+            >Download my resume</a
+          >
         </div>
       </section>
 
       <section class="page" id="skills">
         <h4 class="heading">Skills</h4>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SCSS</li>
-          <li>Figma Design</li>
-          <li>Lorem, ipsum.</li>
-          <li>Lorem, ipsum.</li>
+          <li>Using the command Line and terminal</li>
+          <li>Version control, namely git</li>
+          <li>CSS/SCSS</li>
+          <li>UI/UX design - Figma</li>
+          <li>JavaScript</li>
+          <li>TDD</li>
+          <li>OOP</li>
+          <li>React</li>
+          <li>Agile</li>
+          <li>Node.js</li>
+          <li>Firebase</li>
         </ul>
       </section>
 
@@ -84,90 +94,243 @@
         <h5 class="heading">Projects</h5>
         <div class="projectContainer">
           <div class="projectContainer__project">
-            <a href="#"
+            <a href="./Images/calculator.png"
               ><img
-                src="./Images/screenShot.png"
-                alt="Project"
+                src="./Images/calculator.png"
+                alt="Calculator Project"
                 width="225px"
                 height="130px"
             /></a>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-              ullam suscipit nostrum consectetur, quidem vitae architecto
-              quisquam ab? Est, commodi!
+              A _Nology project created as part of Module 3 - "JavaScript
+              Fundamentals" <br />The Brief: Design and build your own full
+              functioning calculator using HTML, CSS / SCSS and JavaScript.
             </p>
             <div class="buttonContainer">
-              <div>
-                <a href="#" target="_blank" class="button button--i">preview</a>
+              <div onclick="handleNotAvailable()">
+                <a target="_blank" class="button button--i">preview</a>
               </div>
               <div>
-                <a href="#" target="_blank" class="button button--ii">code</a>
+                <a
+                  href="https://github.com/clairey259/nology_jsCalculator"
+                  target="_blank"
+                  class="button button--ii"
+                  >code</a
+                >
               </div>
             </div>
           </div>
+
           <div class="projectContainer__project">
-            <a href="#"
+            <a href="./Images/snake.png"
               ><img
-                src="./Images/screenShot.png"
-                alt="Project"
+                src="./Images/snake.png"
+                alt="Snake Project"
                 width="225px"
                 height="130px"
             /></a>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-              ullam suscipit nostrum consectetur, quidem vitae architecto
-              quisquam ab? Est, commodi!
+              A game I Created using JS Canvas as part of a _Nology project from
+              Module 3 - "JavaScript Fundamentals"
+              <br />
+              The Brief: Design and build your own full functioning browser
+              based game using HTML, CSS/SCSS and JavaScript.
             </p>
             <div class="buttonContainer">
-              <div>
-                <a href="#" target="_blank" class="button button--i">preview</a>
+              <div onclick="handleNotAvailable()">
+                <a target="_blank" class="button button--i">preview</a>
               </div>
               <div>
-                <a href="#" target="_blank" class="button button--ii">code</a>
+                <a
+                  href="https://github.com/clairey259/nology_snake-js-game"
+                  target="_blank"
+                  class="button button--ii"
+                  >code</a
+                >
               </div>
             </div>
           </div>
+
           <div class="projectContainer__project">
-            <a href="#"
+            <a href="./Images/morsecode translator.png"
               ><img
-                src="./Images/screenShot.png"
-                alt="Project"
+                src="./Images/morsecode translator.png"
+                alt="Morse Cose Translator Project"
                 width="225px"
                 height="130px"
             /></a>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-              ullam suscipit nostrum consectetur, quidem vitae architecto
-              quisquam ab? Est, commodi!
+              This is a _nology Challenge from Module 4 - "JavaScript Advanced &
+              Testing" <br />
+              The Brief: Create a morse code translator using OOP
             </p>
             <div class="buttonContainer">
-              <div>
-                <a href="#" target="_blank" class="button button--i">preview</a>
+              <div onclick="handleNotAvailable()">
+                <a target="_blank" class="button button--i">preview</a>
               </div>
               <div>
-                <a href="#" target="_blank" class="button button--ii">code</a>
+                <a
+                  href="https://github.com/clairey259/js_morseCodeTranslator"
+                  target="_blank"
+                  class="button button--ii"
+                  >code</a
+                >
               </div>
             </div>
           </div>
+
           <div class="projectContainer__project">
-            <a href="#"
+            <a href="./Images/Alien ships.png"
               ><img
-                src="./Images/screenShot.png"
-                alt="Project"
+                src="./Images/Alien ships.png"
+                alt="SpaceShip game Project"
                 width="225px"
                 height="130px"
             /></a>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-              ullam suscipit nostrum consectetur, quidem vitae architecto
-              quisquam ab? Est, commodi!
+              This is a _nology Challenge from Module 4 - "JavaScript Advanced &
+              Testing" <br />
+              The Brief: Create a simple text only game with a single button
+              that hits a random alien ship in the fleet. Each time the button
+              is pressed, a random alien ship is hit and its hit points are
+              reduced. Once an alien ships points have hit zero the ship is
+              destroyed and can’t be hit again. The game is over once all alien
+              ships have been destroyed.
+            </p>
+            <div class="buttonContainer">
+              <div onclick="handleNotAvailable()">
+                <a target="_blank" class="button button--i">preview</a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/clairey259/nology_jsSpaceshipGame"
+                  target="_blank"
+                  class="button button--ii"
+                  >code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projectContainer__project">
+            <a href="./Images/TicketTracker.png"
+              ><img
+                src="./Images/TicketTracker.png"
+                alt="Ticket Tracker Project"
+                width="225px"
+                height="130px"
+            /></a>
+            <p>
+              This is a _nology Challenge from Module 5 - "React" <br />
+              The Brief: Should be built in React. Each component should manage
+              its own state. The components should be generated using a map().
+            </p>
+            <div class="buttonContainer">
+              <div onclick="handleNotAvailable()">
+                <a target="_blank" class="button button--i">preview</a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/clairey259/nology_reactApp-ticketTracker"
+                  target="_blank"
+                  class="button button--ii"
+                  >code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projectContainer__project">
+            <a href="./Images/Beers.png"
+              ><img
+                src="./Images/Beers.png"
+                alt="API Project"
+                width="225px"
+                height="130px"
+            /></a>
+            <p>
+              This is a _nology Challenge from Module 5 - "React". <br />
+              The Brief: Create website using React based on a reference
+              image/specification provided. You will need to use the Punk API
+              (https://punkapi.com/) to access data for the task. Unit test
+              where possible.
+            </p>
+            <div class="buttonContainer">
+              <div onclick="handleNotAvailable()">
+                <a target="_blank" class="button button--i">preview</a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/clairey259/nology_reactApp-punkAPI"
+                  target="_blank"
+                  class="button button--ii"
+                  >code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projectContainer__project">
+            <a href="https://mazinapp-a38c5.web.app/"
+              ><img
+                src="./Images/MazinApp.png"
+                alt="React Project"
+                width="225px"
+                height="130px"
+            /></a>
+            <p>
+              A react app created as part of a _Nology challenge in Module 7 -
+              "Client Project Tools" <br />
+              The Brief: Create a react app following a provided component tree.
+              Connect app to firebase/firestore. Add a UserContext and a
+              ThemeProvider. Add a button which toggles light/dark mode. Use
+              react-router-dom to add login register and home pages. Add a
+              signout buton with funtionality. Add authentification with email
+              and password. Integrate with google auth.
             </p>
             <div class="buttonContainer">
               <div>
-                <a href="#" target="_blank" class="button button--i">preview</a>
+                <a
+                  href="https://mazinapp-a38c5.web.app/"
+                  target="_blank"
+                  class="button button--i"
+                  >preview</a
+                >
               </div>
               <div>
-                <a href="#" target="_blank" class="button button--ii">code</a>
+                <a
+                  href="https://github.com/clairey259/nology_reactApp-withFirebase"
+                  target="_blank"
+                  class="button button--ii"
+                  >code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="projectContainer__project">
+            <a href="./Images/API.png"
+              ><img
+                src="./Images/API.png"
+                alt="API Project"
+                width="225px"
+                height="130px"
+            /></a>
+            <p>
+              An API I built as part of Module 8 - "Server Side Programming" of
+              the _Nology self-paced course.
+            </p>
+            <div class="buttonContainer">
+              <div onclick="handleNotAvailable()">
+                <a target="_blank" class="button button--i">preview</a>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/clairey259/nology_nodeApp-studentsAPI"
+                  target="_blank"
+                  class="button button--ii"
+                  >code</a
+                >
               </div>
             </div>
           </div>
