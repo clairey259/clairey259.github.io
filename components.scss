@@ -1,3 +1,5 @@
+@import "./base";
+
 nav {
   justify-content: right;
   max-width: 100vw;
@@ -158,6 +160,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height:fit-content !important;
 
   .heading {
     display: flex;

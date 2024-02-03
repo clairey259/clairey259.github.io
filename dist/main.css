@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Monofett&family=Monoton&family=Roboto&family=Space+Mono&display=swap");
 /* Variables */
 /* Page Reset */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Monofett&family=Monoton&family=Roboto&family=Space+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -83,6 +84,22 @@ nav {
     margin-right: 10rem !important;
   }
 }
+/* Import fonts */
+/* Variables */
+/* Page Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", mono;
+  color: #f9f6f0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
 nav {
   justify-content: right;
   max-width: 100vw;
@@ -234,7 +251,7 @@ nav .nav__desktop a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: fit-content;
+  height: fit-content !important;
 }
 #skills .heading {
   display: flex;
